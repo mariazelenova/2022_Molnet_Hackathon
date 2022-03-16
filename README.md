@@ -1,6 +1,35 @@
 # 2022_Molnet_Hackathon
 
-For Russian see below.
+English:
+
+Our case: Database programming
+Task: Develop a mechanism that will map multiple database tables to fields of a single Java POJO and
+will build a where-clause of the SQL query based on the values and data types of the fields.
+Solution: People who knew how to program in Java immediately dropped out of the project, so we had to solve the task in Python (which everyone knew). Of course, 
+we didn't win anything with this solution, but I'm happy that we did present the solution and the rest of the team did a good job. The Patient db toy database 
+is based on real, published genetic data.
+
+*****
+
+The Patient db management program is designed to simplify work with patient genomic data.
+It is assumed that there is a database that contains genomic rearrangements of the following format: Xq28(123455-123456), along with patient age and sex, 
+and dates of sample collection and and analysis being ready.
+
+How to use:
+
+Enter the value of the chromosome of interest (1 -- 22, X, Y) and the patient's age. If only one value is entered (chromosome or age), the second value will be searched without restrictions. To perform a search, click the "Find" button.
+
+As a result, you will get a list that displays the following values from the table:
+
+Patient number in the journal;
+Age (years);
+The value of the chromosomal rearrangement (chromosome, location, coordinates, copy number) and the type of rearrangement.
+
+For the results obtained, one can check out how long it took for the analysis to be prepared.
+
+Then one can either perform a new search or exit the program.
+
+Russian:
 
 Наш кейс: Программирование базы данных
 Задание: Разработать механизм, который сопоставит множество таблиц баз данных полям единственного Java POJO и 
